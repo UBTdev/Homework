@@ -1,0 +1,41 @@
+.text-1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.text-2 {
+  font-size: 30px;
+  text-decoration: line-through;
+}
+
+del {
+  color: red;
+  text-decoration: line-through;
+}
+
+del span {
+  color: darkblue
+}
+
+.text-3 {
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+}
+
+.text-4 {
+  word-spacing: 30px;
+  color: blueviolet;
+  text-decoration: overline;
+  text-decoration-color: red;
+  text-decoration-style: wavy;
+}
+
+.text-5 {
+  letter-spacing: 5px;
+  text-decoration: underline;
+  text-decoration-style: double;
+}

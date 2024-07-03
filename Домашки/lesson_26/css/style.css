@@ -1,0 +1,38 @@
+div {
+  color: aqua;
+}
+.block {
+  color: red;
+}
+
+.id-block {
+  color: blue;
+}
+
+[data-example] {
+  color: rgb(255, 0, 170);
+}
+
+[data-example="value2"] {
+  color: rgb(80, 255, 109);
+}
+
+.block1, .block4, .block5 {
+  color: yellow;
+}
+
+div.blue-block {
+  background: firebrick;
+}
+
+span.blue-block {
+  color: blanchedalmond;
+}
+
+div .orange {
+  color: darkgoldenrod;
+}
+
+.parent>.child {
+  color: bisque;
+}
