@@ -1,0 +1,147 @@
+body {
+  font-size: 40px;
+  background: #f3f3f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.block {
+  margin: 5vh;
+  height: 50vh;
+  box-shadow: 0 0.5vw 3vh #0615633b;
+  border-radius: 2vw;
+  background: #fff;
+}
+
+/* ======================================= */
+
+.block {
+  overflow: auto;
+  background: bisque;
+  background: url("../img/monkey.jpg") 50% 50% / contain no-repeat, url(../img/ziobra.jpg) 100% 0 no-repeat, url(../img/tiger.png) -20% 70% no-repeat;
+  /* background-image: linear-gradient(45deg, red 10%, orange, blue, green, purple); */
+  /* background-image: radial-gradient( red 10%, orange, blue, green, purple); */
+  /* background-color: black; */
+  /* background-repeat: no-repeat; */
+  /* background-position: 50% 0%; */
+  /* background-attachment: local; */
+  /* block-size: 400px 500px; */
+}
+
+.block::-webkit-scrollbar {
+  width: 20px;
+}
+
+.block::-webkit-scrollbar-track {
+  background: linear-gradient(red, orange, yellow, green, aqua, blue, purple);
+}
+
+.block::-webkit-scrollbar-thumb {
+  background: rgba(31, 255, 1, 0);
+  /* box-shadow: inset 1px 1px 100000px #4646462a; */
+  border: 4px solid #3333338c;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar {
+  width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient(red, orange, yellow, green, aqua, blue, purple);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(31, 255, 1, 0);
+  /* box-shadow: inset 1px 1px 100000px #4646462a; */
+  border: 4px solid #3333338c;
+  border-radius: 5px;
+}
+
+.girawfff {
+  margin: 5vh;
+  height: 50vh;
+  box-shadow: 0 0.5vw 3vh #0615633b;
+  border-radius: 2vw;
+  background: #fff;
+}
+
+.girawfff {
+  overflow: auto;
+  background: bisque;
+  background: url("../img/Giraffes_552083_3000x2060.jpg") 50% 50% / cover no-repeat fixed
+}
+
+.paschalka {
+  background: url(../img/ziobra.jpg) 50% 100% no-repeat;
+  /* background-position: center; */
+  width: 1000px;
+  height: 1000px;
+}
+
+.candy {
+  margin: 5vh;
+  height: 50vh;
+  box-shadow: 0 0.5vw 3vh #0615633b;
+  border-radius: 2vw;
+  background: #fff;
+}
+
+.candy {
+  overflow: auto;
+  background: bisque;
+  background: url("../img/1667572475_5-sportishka-com-p-priora-skitls-vkontakte-5.jpg") 50% 50% / cover no-repeat fixed
+}
+
+.ff {
+  margin: 5vh;
+  height: 50vh;
+  box-shadow: 0 0.5vw 3vh #0615633b;
+  border-radius: 2vw;
+  background: #fff;
+}
+
+.ff {
+  overflow: auto;
+  background: bisque;
+  background: url("../img/maxresdefault\ \(1\).jpg") 50% 50% / cover no-repeat fixed
+}
+
+.arrow {
+  position: relative;
+  margin-left: 900px;
+  animation-name: arrow;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+  0% {
+    top: 0
+  }
+  50% {
+    top: 50px
+  }
+  100% {
+    top: 0px
+  }
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 50px 60px;
+  border-color: #1aac0d transparent transparent transparent;
+
+}
+.PRIAMOYGOLNIKBLYATTTT {
+  margin: 0 25px 0 25px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 25px;
+  border-color: #1aac0d;
+}
