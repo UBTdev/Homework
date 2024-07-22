@@ -1,0 +1,15 @@
+body {
+  font-size: 40px;
+}
+/* ============================================================= */
+
+.block-1 {
+background: grey;
+  /* min-width: 1000px; */
+  max-width: 1000px;
+}
+
+.img {
+  width: 400px;
+  height: 400px;
+}
