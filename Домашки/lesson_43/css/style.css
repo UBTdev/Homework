@@ -1,0 +1,287 @@
+body {
+  background: #181E34;
+  color: #fff;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: 400; */
+  font-style: normal;
+  line-height: 150%;
+  color: #fff;
+}
+
+.container {
+  max-width: 930px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+
+/* =========================================== */
+
+.header {
+  margin: 30px 0px 36px 0px;
+}
+
+.header_inner {
+  display: flex;
+  align-items: center;
+}
+
+.header_nav {
+  margin-left: auto;
+}
+
+.header_list {
+  display: flex;
+}
+
+.header_list_item {
+  margin-right: 30px;
+}
+
+.header_user_button {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  padding: 14px 30px;
+  width: 113px;
+  height: 48px;
+  background: #fff;
+  color: rgb(39, 102, 174);
+  border-radius: 100px;
+  font-weight: 500;
+}
+
+/* =========HERO============= */
+.hero {
+  position: relative;
+  background: url("/images/heroBackground.jpeg") 10% 50% / cover no-repeat;
+  height: 508px;
+  background-color: rgba(0, 0, 0, 0.623);
+  background-blend-mode: multiply;
+  padding-top: 120px;
+}
+
+.container {}
+
+.hero_heading {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hero_inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero_text {
+  /* width: 400px; */
+  margin-right: 151px;
+}
+
+.hero_text_one {
+  text-align: left;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.hero_word {
+  text-transform: uppercase;
+  color: #01A2CB;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.hero_text_two {
+  margin-top: 10px;
+  text-align: left;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.hero_buttons {
+  /* width: 320px; */
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.hero-button_one {
+  padding: 18px 0 18px 0;
+  text-align: center;
+  width: 320px;
+  height: 56px;
+  background: -webkit-linear-gradient(rgb(0, 164, 204), rgb(39, 102, 174));
+  border-radius: 30px;
+}
+
+.hero-button_two {
+  margin-top: 10px;
+  text-align: center;
+  width: 320px;
+  height: 56px;
+  background: -webkit-linear-gradient(45deg, rgb(0, 164, 204),
+      rgb(39, 102, 174));
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-button_one img,
+.hero-button_two img {
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+/* ==========CARDS========== */
+.cards_button {
+  margin: auto;
+  /* margin-top: 10px; */
+  text-align: center;
+  width: 436px;
+  height: 56px;
+  background: -webkit-linear-gradient(rgb(0, 164, 204),
+      rgb(39, 102, 174));
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  padding: 120px 0;
+}
+
+.container {}
+
+.cards_heading {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.cards_inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards_title {}
+
+.cards_text {
+  text-align: center;
+  margin-bottom: 60px;
+
+}
+
+.cards_flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -14px;
+  /* margin-bottom: -28px;
+  margin-right: 30px; */
+}
+
+.cards {
+  padding: 120px 0;
+}
+
+.cards_item_title {}
+
+.cards_flex_item {
+  flex: 0 0 25%;
+  margin-bottom: 28px;
+  /* margin-bottom: 78px; */
+  padding: 0 14px;
+}
+
+.cards_flex_inner {
+  background: #197CB8;
+  border: #176BAE;
+  box-shadow: 4px 4px 13px rgba(5, 13, 41, 0.76);
+  border-radius: 16px;
+  padding: 28px;
+  height: 141px;
+}
+
+.cards_item_title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cards_text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.cards_button {}
+
+/* ============footer==============*/
+.footer_line {
+  width: 100%;
+  height: 1px;
+  background: rgb(46, 57, 97);
+}
+.footer {
+  padding: 60px 0px 60px 0px;
+}
+
+.container {}
+
+.footer_inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_text {
+  width: 267px;
+}
+
+.footr_list_1_inner {}
+
+.list_heading {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.footer_list {}
+
+.footer_list_item {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  line-height: 150%;
+  margin: 10px 0px;
+}
+
+.footer_text_item {
+  margin-top: 15px;
+  font-weight: 300;
+}
+
+.footr_list_2_inner {}
