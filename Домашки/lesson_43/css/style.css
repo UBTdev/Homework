@@ -55,7 +55,7 @@ body {
 /* =========HERO============= */
 .hero {
   position: relative;
-  background: url("/images/heroBackground.jpeg") 10% 50% / cover no-repeat;
+  background: url("images/heroBackground.jpeg") 10% 50% / cover no-repeat;
   height: 508px;
   background-color: rgba(0, 0, 0, 0.623);
   background-blend-mode: multiply;
