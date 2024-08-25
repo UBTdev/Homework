@@ -51,7 +51,7 @@ body {
 .hero {}
 
 .hero-bg {
-  background: url("img/video.jpg") no-repeat;
+  background: url("../img/video.jpg") no-repeat;
   background-size: 100%;
   height: 582px;
   padding: 120px 0;
@@ -223,7 +223,7 @@ body {
 .product-card-item-bg {
   width: 384px;
   height: 238px;
-  background: url('img/watch.jpg');
+  background: url('../img/watch.jpg');
   padding-top: 30px;
 }
 
