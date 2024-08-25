@@ -36,9 +36,10 @@ body {
 .header-nav-item {}
 
 .socials {
-  width: 286px;
+  width: 370px;
   display: flex;
   justify-content: space-between;
+  padding: 0 42px;
 }
 
 .telegram-header-link {}
