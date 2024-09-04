@@ -14,7 +14,7 @@ body {
 }
 
 .block {
-    background-image: url("../Volkswagen");
+    background-image: url("../Volkswagen.png");
     background-size: contain;
     /* background-color: #fff; */
     height: 200px;
