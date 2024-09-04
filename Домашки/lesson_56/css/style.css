@@ -1,0 +1,92 @@
+body {
+    background-color: #1d1d1f;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+
+.wrapper {
+    padding: 50px;
+    min-height: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.link {
+    display: block;
+    background-color: #555;
+    border-radius: 2em;
+    padding: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 2em;
+    margin-bottom: 100px;
+    font-size: inherit;
+}
+
+.button {
+    display: block;
+    background-color: #555;
+    border-radius: 2em;
+    padding: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: inherit;
+    color: inherit;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+/* ======================================================== */
+
+.link:hover {
+    background: #ff0000;
+    transform: rotate(170deg);
+}
+
+.block__title:hover {
+    color: aquamarine;
+}
+
+.button:active {
+    background: #fff;
+}
+
+:focus {
+    box-shadow: 0 0 20px 10px rgba(8, 132, 255, 0.664);
+}
+
+.list__item {
+    color: #ff0000;
+}
+
+.list__item:first-child {
+    color: aqua;
+}
+
+.list__item:last-child {
+    color: greenyellow;
+}
+
+
+.list__item:nth-child(even) {
+    color: chocolate;
+}
+
+.list__item:nth-child(odd) {
+    color: cornflowerblue;
+}
+
+.list__other:nth-child(4) {
+    color: gold;
+}
+
