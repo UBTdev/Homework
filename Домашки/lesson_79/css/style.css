@@ -1,0 +1,101 @@
+* {
+  /* box-sizing: border-box; */
+}
+
+body {
+  color: rgb(0, 230, 0);
+  background-color: #333;
+  font-family: sans-serif;
+  align-content: center;
+}
+
+.DONT {
+  position: absolute;
+  left: 44vw;
+  bottom: 30px;
+  color: #969696;
+}
+
+
+.wrapper {
+  position: relative;
+  margin: 0 15%;
+}
+
+.tablet {
+  position: relative;
+  display: flex;
+  width: 70vw;
+  height: 80vh;
+  border-radius: 35px;
+  border: solid 5px #000;
+}
+
+.tablet__wrapper {
+  border: solid 30px #0f0f0f;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgb(28, 28, 28), rgba(0, 50, 7, 0.752));
+  padding: 25px;
+}
+
+.tablet::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: #0d0b16;
+  position: absolute;
+  left: 3px;
+  top: 36vh;
+  border-radius: 100%;
+  padding: 10px;
+  box-shadow: inset 0px 0px 2px 5px #1a1a1a;
+  border: solid 2px #0b0b0b;
+}
+
+
+.myLog {
+  left: 10px;
+  font-size: 1.2vw;
+  text-wrap: wrap;
+}
+
+
+.nav__bar {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-content: end;
+  background-color: #000;
+  width: 35px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  padding-right: 4px;
+}
+
+.nav__bar svg {
+  margin: 0;
+  transform: rotate(-90deg);
+}
+
+.power__button {
+  background: #606060;
+  width: 40px;
+  position: absolute;
+  left: 20vw;
+  height: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  color: aliceblue;
+  border-radius: 0px 0px 30px 30px;
+}
+
+@media (max-width: 600px) {
+  .myLog {
+    font-size: 2.9vw;
+  }
+}
