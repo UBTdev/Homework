@@ -25,7 +25,7 @@ if (nameUserInput == 'Victor' && passwordUserInput == 'password123') {
   (nameUserInput == 'Jonh' && passwordUserInput == 'admin123') {
   setTimeout(() => { console.log('authorization was successful'); }, 2000);
   setTimeout(() => { console.log('autentification was successful'); }, 3000);
-  setTimeout(() => { console.log('C:/users/Victor/PersonalData/access data>'); }, 3500);
+  setTimeout(() => { console.log('C:/users/Jonh/PersonalData/access data>'); }, 3500);
   setTimeout(() => { console.log(`Your name: ${nameUserInput}`); }, 4000);
   setTimeout(() => { console.log('Your role: admin'); }, 4200);
   setTimeout(() => { console.log(`Your password: ${passwordUserInput}`); }, 4400);
