@@ -1,0 +1,22 @@
+body {
+  height: 2000px;
+}
+
+.btn {
+  width: 100px;
+  height: 50px;
+}
+
+.form__label {
+  border: 2px solid;
+  padding: 14px 50px;
+}
+.form__input-area {
+  border: 2px solid;
+  padding: 15px 50px;
+}
+.form__submit-button  {
+  width: 200px;
+  height: 50px;
+  border: 2px solid;
+}

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.btn {
+  margin-bottom: 5px;
+  padding: 6px 12px;
+  font-weight: 500;
+  font-style: 20px;
+  color: #fff;
+  background-color: #0084ff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.text {
+  transition: 1s;
+  color: RED;
+}
+
+.move {
+  translate: 200px;
+  transition: 1s;
+}
+
+.red {
+  color: #333;
+}
