@@ -784,12 +784,12 @@ body {
   transition: var(--transition);
 }
 .accordion-list__content {
-/*   display: none; */
+  /* display: none; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .accordion-list__content--show {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
 }
 
 .accordion__item--oppened .accordion-list__content {
