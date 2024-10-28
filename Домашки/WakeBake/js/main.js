@@ -1,4 +1,4 @@
-// mobile nav
+// burger menu
 (function () {
   document.addEventListener('click', burgerInit)
 
@@ -14,7 +14,7 @@
       document.body.classList.remove('body--opened-menu');
     }
   }
-
+// modal Window
   const modal = document.querySelector('.modal');
   const modalOpenBtn = document.querySelector('.offer__img-button');
 
@@ -33,6 +33,57 @@
       document.body.classList.remove('body--opened-modal');
     }
   }
+
+  // tabs
+  const tabControls = document.querySelector('.tab-controls');
+  tabControls.addEventListener('click', toggleTab);
+
+  function toggleTab(e) {
+
+    const tabControl = e.target.closest('.tab-controls__link');
+
+    if (!tabControl) return;
+    e.preventDefault();
+    if (tabControl.classList.contains('tab-controls__link--active')) return;
+
+    const tabContentId = tabControl.getAttribute('href');
+    const tabContent = document.querySelector(tabContentId);
+    const tabControlActive = document.querySelector('.tab-controls__link--active');
+    const tabActive = document.querySelector('.tab-content--show');
+
+    if (tabControlActive) {
+      tabControlActive.classList.remove('tab-controls__link--active');
+    }
+    
+    if (tabActive) {
+      tabActive.classList.remove('tab-content--show');
+    }
+
+    tabControl.classList.add('tab-controls__link--active');
+    tabContent.classList.add('tab-content--show');
+  }
+
+  // accordion
+  const accordionLists = document.querySelectorAll('.accordion__list');
+
+  accordionLists.forEach(el => (
+
+    el.addEventListener('click', (e) => {
+
+      const accordionControl = e.target.closest('.accordion-list__button');
+      if (!accordionControl) return;
+      const accordionItem = accordionControl.parentElement;
+      const accordionContent = accordionControl.nextElementSibling;
+
+      accordionItem.classList.toggle('.accordion.accordion-list__content--show');
+
+      if (accordionItem.classList.contains('.accordion-list__content--show')) {
+        accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+      } else {
+        accordionContent.style.maxHeight = null
+      }
+    })
+  ))
 })()
 
 
