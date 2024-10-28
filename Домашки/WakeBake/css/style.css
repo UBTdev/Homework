@@ -784,7 +784,7 @@ body {
   transition: var(--transition);
 }
 .accordion-list__content {
-  display: none;
+/*   display: none; */
 }
 
 .accordion-list__content--show {
