@@ -663,6 +663,7 @@ body {
 }
 .tab-controls__link {
   display: block;
+  width: 138px;
   padding: 14px 30px;
   background-color: var(--general-background);
   border-radius: 100px;
@@ -698,8 +699,8 @@ body {
 .tab-content--active .tab-content {}
 
 .accordion__list {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 30px;
 }
 
@@ -707,29 +708,56 @@ body {
   background: var(--general-background);
   border: 1px solid var(--accent-color);
   border-radius: var(--border-radius);
-  padding: 40px 30px 40px 30px;
+  padding: 78px 30px 40px 30px;
   max-width: 1280px;
   width: 100vw;
   font-size: 50px;
-  cursor: pointer;
-  /* position: relative; */
   align-items: flex-start;
-}
-.accordion-list__button {
   position: relative;
-  display: block;
-  display: flex;
-  align-items: flex-start;
-  background: var(--general-background);
-  width: 100%;
+  max-height: 100%;
 }
+
+.accordion-list__item--show {
+}
+
+.accordion-list__button {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background: var(--general-background);
+  border-radius: var(--border-radius);
+  padding: 0 30px;
+  width: 100%;
+  height: 118px;
+  top: 0;
+  left: 0;
+}
+
 
 .tab-content__title {
   font-size: 42px;
   color: var(--heading-text);
 }
+
+.accordion-list__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.accordion-list__content--show {
+  max-height: 400px;
+  /* overflow: visible; */
+  opacity: 1;
+  transition: var(--transition);
+}
+
 .tab__toggle-button {
-  /* position: absolute; */
+  position: absolute;
   right: 30px;
   top: 41px;
 }
@@ -747,6 +775,8 @@ body {
 }
 
 .tab-content
+
+
 
 .accordion-list__item .tab__toggle-button svg {
   position: absolute;
@@ -768,32 +798,20 @@ body {
 }
 
 
-.accordion__item--oppened .tab__toggle-button svg {
+.accordion-list__item--show .tab__toggle-button svg {
   fill: var(--accent-color);
   transform: rotate(90deg);
   transition: var(--transition);
 }
 
-.accordion__item--oppened .tab__toggle-button rect {
+.accordion-list__item--show .tab__toggle-button rect {
   fill: var(--accent-color);
   transition: var(--transition);
 }
 
-.accordion__item--oppened .tab__toggle-button path {
+.accordion-list__item--show .tab__toggle-button path {
   fill: var(--general-background);
   transition: var(--transition);
-}
-.accordion-list__content {
-  /* display: none; */
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.accordion-list__content--show {
-}
-
-.accordion__item--oppened .accordion-list__content {
-  /* display: grid; */
 }
 
 .info-block__list {

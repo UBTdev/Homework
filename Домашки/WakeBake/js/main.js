@@ -70,18 +70,17 @@
 
     el.addEventListener('click', (e) => {
 
+      const accordionList = e.currentTarget 
+      const accordionShowContent = accordionList.querySelector('.accordion-list__content');
+
       const accordionControl = e.target.closest('.accordion-list__button');
+      const accordionContentWrap = e.target.closest('.accordion-list__content');;
       if (!accordionControl) return;
       const accordionItem = accordionControl.parentElement;
       const accordionContent = accordionControl.nextElementSibling;
 
-      accordionItem.classList.toggle('.accordion.accordion-list__content--show');
-
-      if (accordionItem.classList.contains('.accordion-list__content--show')) {
-        accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-      } else {
-        accordionContent.style.maxHeight = null
-      }
+      accordionContent.classList.toggle('accordion-list__content--show');
+      accordionItem.classList.toggle('accordion-list__item--show');
     })
   ))
 })()
