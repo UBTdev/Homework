@@ -14,7 +14,7 @@
       document.body.classList.remove('body--opened-menu');
     }
   }
-// modal Window
+  // modal Window
   const modal = document.querySelector('.modal');
   const modalOpenBtn = document.querySelector('.offer__img-button');
 
@@ -54,7 +54,7 @@
     if (tabControlActive) {
       tabControlActive.classList.remove('tab-controls__link--active');
     }
-    
+
     if (tabActive) {
       tabActive.classList.remove('tab-content--show');
     }
@@ -70,7 +70,7 @@
 
     el.addEventListener('click', (e) => {
 
-      const accordionList = e.currentTarget 
+      const accordionList = e.currentTarget
       const accordionShowContent = accordionList.querySelector('.accordion-list__content');
 
       const accordionControl = e.target.closest('.accordion-list__button');
@@ -83,6 +83,53 @@
       accordionItem.classList.toggle('accordion-list__item--show');
     })
   ))
+  // slider in gallery
+  const swiper = new Swiper('.gallery__slider', {
+    spaceBetween: 32,
+    slidesPerView: 4,
+    // pagination
+    pagination: {
+      el: '.gallery__pagination',
+      type: 'fraction',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.gallery__swiper-button-next',
+      prevEl: '.gallery__swiper-button-prev',
+    },
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 320px
+      300: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      320: {
+        slidesPerView: 1.2,
+        spaceBetween: 20
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      900: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      1061: {
+        slidesPerView: 4,
+        spaceBetween: 32,
+      },
+    }
+  });
+  // slider in reviews
 })()
 
 

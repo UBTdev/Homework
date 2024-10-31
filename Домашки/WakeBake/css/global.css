@@ -1,0 +1,168 @@
+body {
+  font-family: "Montserrat", 'Arial', sans-serif;
+  line-height: 1.5;
+  color: var(--general-text);
+  background: var(--general-background);
+}
+
+.body--opened-menu {
+  overflow: hidden;
+}
+
+.body--opened-modal {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 74px;
+}
+
+::-webkit-scrollbar {
+}
+
+/* ==========Modal========== */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: #0000004d;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+}
+
+.body--opened-modal .modal {
+  transition: var(--transition);
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--general-background);
+  border-radius: var(--border-radius);
+  padding: 0px 60px 60px;
+  max-width: 428px;
+  height: 491px;
+  gap: 10px;
+}
+
+.modal__cencel {
+  position: absolute;
+  width: 24px;
+  right: 20px;
+  top: 20px;
+}
+
+.modal__cencel path,
+.modal__cencel rect {
+  transition: var(--transition);
+}
+
+.modal__cencel:hover path,
+.modal__cencel:hover rect {
+  stroke: #AC907A;
+  transition: var(--transition);
+}
+
+.modal__img {
+  /* position: absolute;
+  top: -65px;
+  right: 90px; */
+  margin: -90px 0 15px 13px;
+}
+
+.modal__title {
+  color: rgb(31, 23, 17);
+  font-family: Gabriola;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 90%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.modal__text {
+  margin-bottom: 20px;
+}
+
+.modal__form-label {}
+
+.modal__form {}
+
+.field {
+  position: relative;
+  display: block;
+}
+
+.field span {
+  color: var(--button-hover);
+  position: absolute;
+  font-size: 11px;
+  top: 11px;
+  left: 28px;
+  color: #AC907A;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.field__input {
+  display: block;
+  height: 62px;
+  width: 100%;
+  border-radius: 100px;
+  border: 1px solid #AC907A;
+  padding: 19px 28px;
+  font-size: 16px;
+  transition: var(--transition);
+}
+
+.field__input:hover {
+
+  border: 1px solid var(--button-hover);
+  transition: var(--transition);
+}
+
+.field__input::placeholder {
+  transition: var(--transition);
+}
+
+.field__input:hover::placeholder {
+  color: var(--button-hover);
+  transition: var(--transition);
+}
+
+.field__input:focus {
+  padding: 26px 42px 19px 28px;
+}
+
+.field__input:focus+span {
+  transition: var(--transition);
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__button {
+  width: 100%;
+  height: 62px;
+}
