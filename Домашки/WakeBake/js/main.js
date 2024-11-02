@@ -116,7 +116,7 @@
       },
       // when window width is >= 640px
       640: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 20
       },
       900: {
@@ -130,6 +130,38 @@
     }
   });
   // slider in reviews
+  new Swiper('.testimonials__slider', {
+
+    spaceBetween: 0,
+    slidesPerView: 2.1,
+    centeredSlides: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.testimonials__swiper-button-next',
+      prevEl: '.testimonials__swiper-button-prev',
+    },
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggeble: true,
+    },
+   // Responsive breakpoints
+    breakpoints: {
+    // when window width is >= 320px
+    1201: {
+      slidesPerView: 2.1,
+      spaceBetween: 0,
+    },
+    810: {
+      slidesPerView: 1.5,
+      spaceBetween: 0,
+    },
+    321: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+  }
+  });
 })()
 
 
