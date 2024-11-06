@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5vw;
+}
+
 body {
   font-family: "Montserrat", 'Arial', sans-serif;
   line-height: 1.5;
@@ -32,10 +37,6 @@ body {
 .title {
   font-size: 74px;
 }
-
-::-webkit-scrollbar {
-}
-
 /* ==========Modal========== */
 .modal {
   position: fixed;
@@ -107,10 +108,6 @@ body {
   margin-bottom: 20px;
 }
 
-.modal__form-label {}
-
-.modal__form {}
-
 .field {
   position: relative;
   display: block;
@@ -136,6 +133,7 @@ body {
   padding: 19px 28px;
   font-size: 16px;
   transition: var(--transition);
+  background: none;
 }
 
 .field__input:hover {

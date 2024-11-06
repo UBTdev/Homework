@@ -76,9 +76,9 @@
       const accordionControl = e.target.closest('.accordion-list__button');
       const accordionContentWrap = e.target.closest('.accordion-list__content');;
       if (!accordionControl) return;
+      e.preventDefault()
       const accordionItem = accordionControl.parentElement;
       const accordionContent = accordionControl.nextElementSibling;
-
       accordionContent.classList.toggle('accordion-list__content--show');
       accordionItem.classList.toggle('accordion-list__item--show');
     })
@@ -162,6 +162,11 @@
     },
   }
   });
+  // Phone mask
+  const telInputs = document.querySelectorAll('input[type="tel"]')
+  const im = new Inputmask('+7 (999) 999-99-99')
+  im.mask(telInputs)
+
 })()
 
 

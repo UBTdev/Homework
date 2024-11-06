@@ -12,8 +12,6 @@
   padding-top: 30px;
 }
 
-.container {}
-
 .footer__column-wrapper {
   display: grid;
   grid-template-columns: 0.9fr 0.9fr 1.1fr auto;
@@ -37,8 +35,6 @@
   gap: 15px;
 }
 
-.socials__item {}
-
 .socials__link path {
   transition: var(--transition);
 }
@@ -48,18 +44,12 @@
   transition: var(--transition);
 }
 
-.footer__nav {}
-
 .footer__nav-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
   color: var(--white-text);
 }
-
-.footer__nav-item {}
-
-.footer__nav-link {}
 
 .footer__info-wrapper {
   display: flex;
