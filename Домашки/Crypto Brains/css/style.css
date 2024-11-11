@@ -1,0 +1,160 @@
+@import "reset.css";
+@import "fonts.css";
+@import "global.css";
+@import "header.css";
+@import "footer.css";
+
+:root {
+  --general-bg: #131517;
+  --accent-bg: #1E1F25;
+  --general-text: #ADB3BF;
+  --accent-text: #FFFFFF;
+  --general-title: #F7FAFF;
+  --card-bg: #272A34;
+  --graph-success: #06B470;
+  --graph-error: #F74E2C;
+  --accent-color: #1B70F1;
+  /* border-radius */
+  --button-border-radius: 4px;
+  --card-border-radius: 10px;
+
+  /* decor color */
+  --gray10-color: #54576D;
+  --gray9-color: #7E8184;
+  --gray8-color: #808A9A;
+  --gray6-color: #ADB3BF;
+
+  /* transition */
+  --transition-1: 0.4s;
+}
+
+/* ========= market-trend =========*/
+.main__market-trend {}
+
+.market-trend__top {}
+
+.market-trend__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.market-trend__title {
+  font-size: 38px;
+  line-height: 73px;
+}
+
+.tab-controls {}
+
+.tab-controls__list {
+  display: flex;
+  gap: 30px;
+}
+
+.tab-control__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.tab-control__item:hover a {
+  color: var(--accent-color);
+  transition: var(--transition-1);
+}
+
+.tab-control__item:hover .tab-control__under-line {
+  width: 100%;
+  opacity: 1;
+  transition: var(--transition-1);
+}
+
+.tab-control__link {}
+
+.horisontal__line {
+  margin-bottom: 60px;
+}
+
+.market-trend__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.market-trend__slider-wrapper {
+}
+
+.market-trend__swiper {}
+
+.swiper {}
+
+.market-trend__swiper-wrapper {
+}
+
+.swiper-wrapper {}
+
+.market-trend__slide {
+  padding: 40px 30px;
+  box-sizing: border-box;
+  border: 2px solid rgb(30, 31, 37);
+  border-radius: var(--card-border-radius);
+}
+
+.swiper-slide {}
+
+.market-trend__slide-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.market-trend__coin-name {
+  margin-top: 20px;
+}
+
+.market-trend__coin {
+  margin-top: 10px;
+}
+
+.grown {
+  color: var(--graph-success);
+}
+
+.falls {
+  color: var(--graph-error);
+}
+
+.market-trend__coin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  gap: 6px;
+}
+
+.exchange-rate__coin-price {
+  margin-top: 20px;
+}
+
+.market-tren__grown-graph {
+  margin-top: 20px;
+}
+
+.market-tren__falls-graph {
+  margin-top: 20px;
+}
+
+.market-trend__button {
+  max-width: 240px;
+  background: var(--accent-color);
+  display: flex;
+  gap: 9px;
+
+}
+
+.button {}
