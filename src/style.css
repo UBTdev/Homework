@@ -331,7 +331,7 @@ li a {
     color: #333333c7;
     transition: all 0.4s;
 }
-.sidebar__button.active svg {
+.sidebar__button.active path {
     fill: #333333c7;
     transition: all 0.4s;
 }
@@ -339,7 +339,7 @@ li a {
     color: #333333c7;
     transition: all 0.4s;
 }
-.sidebar__button:hover svg {
+.sidebar__button:hover path {
     fill: #333333c7;
     transition: all 0.4s;
 }
