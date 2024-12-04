@@ -320,8 +320,9 @@ li a {
     color: #ebebeb
 }
 .content__list-diplom {
+    border: 1px solid #676767;
+    background: #393939;
     color: #ebebeb;
-    background: #525252;
 }
 
 @media (max-width: 400px) {
