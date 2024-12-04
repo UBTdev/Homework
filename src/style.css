@@ -23,6 +23,7 @@ a{color:inherit;}
 body {
     font-family: "Montserrat",SansSerif;
     color: black;
+    background: #333;
 }
 
 body.overflow {
@@ -314,6 +315,13 @@ li a {
 }
 .sidebar__button path {
     fill: #fff;
+}
+.sidebar__name {
+    color: #ebebeb
+}
+.content__list-diplom {
+    color: #ebebeb;
+    background: #525252;
 }
 
 @media (max-width: 400px) {
