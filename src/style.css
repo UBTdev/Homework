@@ -324,6 +324,9 @@ li a {
     background: #393939;
     color: #ebebeb;
 }
+.content {
+    background: #333
+}
 
 @media (max-width: 400px) {
     .sidebar__user {
