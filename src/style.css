@@ -327,6 +327,22 @@ li a {
 .content {
     background: #333
 }
+.sidebar__button.active span {
+    color: #333333c7;
+    transition: all 0.4s;
+}
+.sidebar__button.active svg {
+    fill: #333333c7;
+    transition: all 0.4s;
+}
+.sidebar__button:hover span {
+    color: #333333c7;
+    transition: all 0.4s;
+}
+.sidebar__button:hover svg {
+    fill: #333333c7;
+    transition: all 0.4s;
+}
 
 @media (max-width: 400px) {
     .sidebar__user {
