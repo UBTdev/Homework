@@ -16,7 +16,7 @@
   --general-text: #ADB3BF;
   --accent-text: #FFFFFF;
   --general-title: #F7FAFF;
-  --white-2: #FDFDFD;
+
   /* difrend-colors */
   --graph-success: #06B470;
   --graph-error: #F74E2C;
@@ -138,7 +138,7 @@
   border: 2px solid rgb(30, 31, 37);
   border-radius: var(--card-border-radius);
   /* background: var(--bg-card); */
-  max-width: 240px;
+  max-width: 280px ;
 }
 
 .swiper-slide {}
@@ -605,7 +605,6 @@
 
 .application-inner {
   max-width: 780px;
-  padding: 81px 0;
 }
 
 .application-title {
@@ -616,7 +615,6 @@
 
 .title {
   font-size: 52px;
-  line-height: 62px;
 }
 
 .application-text {
@@ -633,78 +631,35 @@
 }
 
 .download-application__button {
+  color: var(--accent-text);
+  max-width: 180px;
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-wrap: nowrap;
+  transition: var(--transition-1);
   position: relative;
-  display: inline-block;
-  padding: 1px 1px;
-  border-radius: var(--button-border-radius);
-  background: linear-gradient(to right, #ffffff0e, #ffffff63, #ffffff63, #ffffff0e);
-  /* Градиентная рамка */
   overflow: hidden;
-  height: 100%;
+  
+  border-radius: var(--button-border-radius);
+  border: 1px solid transparent;
+  background: linear-gradient(to right, #ffffff0e, #ffffff63, #ffffff63, #ffffff0e);
+  overflow: hidden;
 }
 
-.application-button__inner path {
-  fill: var(--accent-text);
-  transition: var(--transition-1);
-}
-.download-application__button:hover
-.application-button__inner span {
-  color: var(--general-bg);
-  transition: var(--transition-1);
-}
-.download-application__button:hover
-.application-button__inner path {
-  fill: var(--accent-bg);
-  transition: var(--transition-1);
-}
-
-.button__background {
-  position: absolute;
-  border-radius: 50%;
-  width: 0px;
-  height: 0px;
-  top: 50%;          /* Сдвигаем вниз на 50% высоты контейнера */
-  left: 50%;         /* Сдвигаем вправо на 50% ширины контейнера */
-  transform: translate(-50%, -50%); /* Сдвигаем блок обратно на 50% его ширины и высоты */
-  background: var(--accent-text);
-  transition: var(--transition-2);
-  opacity: 0;
-  z-index: -1;
-}
-.download-application__button:hover 
-.button__background {
-  position: absolute;
-  background: var(--accent-text);
-  width: 120%;
-  height: 150px;
-  opacity: 1;
-  transition: var(--transition-2);
-}
-
-.application-button__inner {
+.download-application__button span {
   position: relative;
   z-index: 1;
   display: block;
   padding: 10px 20px;
   background: var(--general-bg);
-  border-radius: var(--button-border-radius);
-  height: 100%;
-  /* display: flex;
-  align-items: center; */
+  border-radius: 8px; 
 }
 
-.application-button__content {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--accent-text);
-  font-size: 18px;
-  z-index: 11;
-}
-
-.application-button__inner span {}
-
-/* .download-application__button::before {
+.download-application__button:before {
   content: '';
   position: absolute;
   top: 0;
@@ -712,12 +667,65 @@
   right: 0;
   bottom: 0;
   z-index: 0;
-  margin: -2px;
-  border-radius: inherit;
-  background: linear-gradient(45deg, #ff7e5f, #feb47b);
-} */
+  margin: -1000px; /* Толщина рамки */
+  border-radius: inherit; /* Наследуем радиус */
+  background: linear-gradient(to right, #ffffff0e, #ffffff63, #ffffff63, #ffffff0e);
+}
 
 
+.download-application__button:hover {
+  color: var(--bg-card);
+  transition: var(--transition-1);
+}
+.download-application__button path {
+  transition: var(--transition-1);
+  fill: var(--accent-text);
+  
+}
+.download-application__button:hover path,
+.download-application__qr-code:hover path {
+  fill: var(--bg-card);
+  transition: var(--transition-1);
+}
+.application__button-background {
+  position: absolute;
+  background: var(--general-bg);
+  width: 0%;
+  height: 0%;
+  border-radius: 50%;
+  transition: var(--transition-3);
+  z-index: -1;
+}
+
+.download-application__button:hover
+.application__button-background {
+  position: absolute;
+  background: var(--accent-text);
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  transition: var(--transition-3);
+}
+
+.download-application__qr-code {
+  max-width: 80px;
+  min-width: 0;
+  border: 1px solid;
+  border-image: linear-gradient(to right, #ffffff0e, #ffffff63, #ffffff63, #ffffff0e);
+  border-image-slice: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--button-border-radius);
+}
+.download-application__qr-code:hover
+.application__button-background {
+  position: absolute;
+  background: var(--accent-text);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: var(--transition-3);
+}
 
 .application__img {
   max-width: 1130px;
@@ -734,41 +742,12 @@
   display: none;
 }
 
-.questions__title {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 53px;
-}
-
-.questions__text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-}
-
-.accordionTitle,
-.accordion__Heading {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 28px;
-}
-
-.footer__socials-mobile-wrapper {
-  display: none;
-}
-
-.footer__socials-mobile-wrapper span {
-  color: var(--accent-text);
-}
-
-
 /* ========== media ==========*/
 @media (max-width: 1600px) {
   .application__img {
     max-width: 650px;
   }
 }
-
 @media (max-width: 1370px) {
   .hero__img-wrapper {
     z-index: -1;
@@ -827,43 +806,23 @@
   .horisontal__line {
     margin-bottom: 30px;
   }
-
   .application__img {
     opacity: 0.4;
     z-index: -1;
   }
-
   .testimonials__title {
-    font-size: 52px;
-    line-height: 60px;
-    max-width: 500px;
-    margin-bottom: 30px;
+    font-size: 42px;
+    line-height: 50px;
   }
-
   .testimonials__content {
     flex-direction: column;
     align-items: center;
     text-align: center;
     width: 100%;
   }
-
-  .application {
-    padding-bottom: 0;
-  }
-
-  .application-inner {}
 }
 
 @media (max-width: 1135px) {
-  .header__img-wrapper {
-    gap: 20px;
-  }
-  .header__nav-list {
-    gap: 15px;
-  }
-  .market-trend__title {
-    font-size: 36px;
-  }
   .beginner-steps__inner {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -896,25 +855,18 @@
     max-width: 100%;
     width: 100%;
   }
-  .hero__exchange-rate {
-    display: none;
-  }
 
   .main,
   .beginner-steps,
   .advantages,
   .testimonials,
-  .application,
-  .questions,
-  .footer {
+  .application {
     padding: 60px 0;
   }
-
   .testimonials__user-content {
     font-size: 18px;
     line-height: 28px;
   }
-
   .application-wrapper {
     display: flex;
     flex-direction: column;
@@ -922,50 +874,33 @@
     align-items: center;
     text-align: center;
   }
-
   .application-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 0;
   }
-
   .application-title {
     margin-bottom: 20px;
   }
-
   .application-text {
     margin-bottom: 40px;
   }
-
   .download-application__wrapper {
     margin-bottom: 60px;
   }
-
   .application__img {
     display: none;
-
+    
   }
-
   .application__img-mobile {
     display: block;
     max-width: 700px;
     width: 100%;
   }
-
   .application__img-mobile img {
     width: 100%;
   }
-
-  /* footer */
-  .footer__columns-wrapper {
-    flex-wrap: wrap;
-  }
-
-  .footer__column {
-    margin-bottom: 26px;
-  }
-
+  
 }
 
 @media (max-width: 1000px) {
@@ -982,8 +917,7 @@
   }
 
   .header__nav {
-    visibility: hidden;
-    opacity: 0;
+    display: none;
   }
 
   .header__logIn-button {
@@ -1045,45 +979,6 @@
   .advantages__img {
     max-width: 514px;
   }
-
-  .footer__bottom-inner {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .footer__bottom-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
-  }
-
-  .copyright {
-    grid-row: 2 / -1;
-    grid-column: 1 / -1;
-  }
-
-  .privacy-policy {
-    grid-row: 1 / 2;
-  }
-
-  .privacy-policy::before {
-    display: none;
-  }
-
-  .privacy-policy::after {
-    left: auto;
-    right: -15px;
-  }
-
-  .terms-of-use {
-    grid-row: 1 / 2;
-  }
-
-  .footer__button-wrapper {
-    display: none;
-  }
 }
 
 @media(max-width: 800px) {
@@ -1091,22 +986,6 @@
     line-height: 62px;
   }
 }
-
-@media(max-width: 780px) {
-  .questions__accordion-wrapper {
-    flex-direction: column;
-  }
-
-  .questions__title {
-    margin-bottom: 20px;
-  }
-
-  .questions__text {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-}
-
 @media(max-width: 675px) {
 
   /* title */
@@ -1137,7 +1016,6 @@
     margin-bottom: 20px;
     max-width: 500px;
   }
-
   .beginner-steps__text {
     margin-bottom: 40px;
   }
@@ -1199,98 +1077,32 @@
   .advantages__container-mobile {
     display: block;
   }
-
   .download-application__wrapper {
     flex-direction: column;
     max-width: 500px;
     width: 100%;
   }
-
   .download-application__button {
     max-width: 700px;
     width: 100%;
   }
-  .application-button__content {
-    justify-content: center;
-  }
-
   .download-application__qr-code {
     display: none;
   }
-
   .applicaton-title {
     line-height: 42px;
   }
-
-  .download-application__button:last-child {
-    display: none;
-  }
-
-  /* /////////////// */
   .testimonials__title {
+    /* font-size: 34px; */
     text-wrap: wrap;
   }
-
-  .testimonials__title {
+  .testimonials__title  {
     margin-bottom: 20px;
-  }
-
-  /* footer */
-  .footer__top-inner {
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-
-  .footer__bottom-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .privacy-policy,
-  .terms-of-use {
-    color: var(--white-2);
-  }
-
-  .footer__socials-wrapper {
-    display: none;
-  }
-
-  .footer__socials-mobile-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer {
-    padding-bottom: 20px;
-  }
-
-  .footer__columns-wrapper {
-    flex-wrap: nowrap;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    margin-bottom: 0;
-  }
-
-  .footer__column {
-    font-size: 14px;
-  }
-
-  .footer__nav-list {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
   }
 }
 
 @media(max-width: 375px) {
-  .header__img-wrapper {
-    width: 92px;
-    height: 15px;
-  }
+
   /* global */
   .main {
     padding-top: 60px;
@@ -1425,7 +1237,6 @@
   .advantages__container {
     display: none;
   }
-
   .testimonials__title {
     font-size: 34px;
     line-height: 40px;
