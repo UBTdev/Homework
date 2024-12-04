@@ -178,12 +178,12 @@
 
 
 .privacy-policy::before {
-    right: 120px;
+    right: 109px;
     /* left: -20px; */
 }
 
 .privacy-policy::after {
-    left: 120px;
+    left: 109px;
     /* right: -20px; */
 }
 
