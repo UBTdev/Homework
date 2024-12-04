@@ -284,6 +284,37 @@ li a {
         flex-direction: column;
     }
 }
+/*dark-theme  */
+.container {
+    background: #333;
+}
+.content__list-item {
+    border: 1px solid #676767;
+    background: #393939;
+    color: #ebebeb;
+}
+.content__list-item:hover {
+    background: #525252;
+}
+.sidebar {
+    background-color: #393939;
+}
+.sidebar__user {
+    background-color: #454545;
+    border: 1px solid #696969;
+    color: #ebebeb;
+}
+.content__title {
+    color: #ebebeb;
+}
+.sidebar__button {
+    background-color: #454545;
+    border: 1px solid #696969;
+    color: #ebebeb;
+}
+.sidebar__button path {
+    fill: #fff;
+}
 
 @media (max-width: 400px) {
     .sidebar__user {
