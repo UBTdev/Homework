@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>switch case</title>
+</head>
+
+<body>
+  <div class="calc">
+    <div class="calc__row">
+      <label for="weight">Вес посылки (кг):</label>
+      <input type="number" id="weight" min="1" max="100" placeholder="кг" value="1">
+    </div>
+    <div class="calc__row">
+      <label for="deliveryType">Тип доставки:</label>
+      <select id="deliveryType">
+        <option value="Стандарт">Стандарт</option>
+        <option value="Экспресс">Экспресс</option>
+        <option value="Премиум">Премиум</option>
+      </select>
+    </div>
+   <button id="calculateBtn">Рассчитать стоимость</button>
+
+  </div>
+
+
+  <script src="/main.js"></script>
+</body>
+
+</html>
