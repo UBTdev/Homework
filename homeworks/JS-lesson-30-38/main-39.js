@@ -13,9 +13,7 @@ console.log(person)
 // Задача 2.
 // Создайте функцию isEmpty, которая проверяет является ли переданный объект пустым. Если объект пуст - верните true, в противном случае false.
 const isEmpty = object => {
-  return objectIsEmpty = Object.values(object).length === 0 ? true : false;
-
-  // return !Object.values(object).length;
+  return !Object.values(object).length;
 }
 console.log(isEmpty(person));
 
